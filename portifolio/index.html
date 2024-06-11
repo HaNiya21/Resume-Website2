@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hana Geremew || Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/icon" href="personal/icon.jpg">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Template Main CSS File -->
+
+    <style>
+        body, h1, h2, h3, h4, h5, h6 {
+            font-family: "Raleway", sans-serif;
+            background-image: url('https://www.freepik.com/free-photo/flat-lay-office-stationery-with-pencil-paper-clips_7871862.htm#fromView=search&page=2&position=18&uuid=6d15a89b-8e1b-431a-baf4-21bbd0e9fdf5');
+            background-size: cover; /* Adjust as needed */
+            background-position: center; /* Adjust as needed */
+        }
+
+#hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+#hero h1 {
+    font-size: 3em;
+    color: #fff;
+    opacity: 0;
+    animation: fadeInUp 2s forwards, moveLeft 2s forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes moveLeft {
+    from {
+        transform: translateX(100px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+</style>
+    </style>
+</head>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px; position: fixed;" id="mySidebar">
+    <div class="w3-container">
+        <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+            <i class="fa fa-remove"></i>
+        </a>
+        <img src="personal/hana profile.jpg" alt="Avatar" style="width:45%;" class="w3-round"><br><br>
+        <h4><b>Hana Geremew</b></h4>
+        <p class="w3-text-grey">Major: CS with Human-Computer Interaction @UNCC'24</p>
+    </div>
+    <div class="w3-bar-block">
+        <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>About</a>
+        <a href="#education" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-graduation-cap fa-fw w3-margin-right"></i>Education</a>
+        <a href="#technicalSkills" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-code fa-fw w3-margin-right"></i>Technical Skills</a>
+        <a href="#professional" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-briefcase fa-fw w3-margin-right"></i>Professional Experience</a>
+        <a href="#projects" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-folder-open fa-fw w3-margin-right"></i>Projects</a>
+        <a href="#leadership" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-users fa-fw w3-margin-right"></i>Leadership</a>
+        <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>Contact</a>
+    </div>
+    <div class="w3-panel w3-large">
+        <a href="https://www.linkedin.com/in/hana-geremew-964b15116/" class="fa fa-linkedin w3-hover-opacity"></a>
+        <a href="https://www.github.com/HaNiya21" class="fa fa-github w3-hover-opacity"></a>
+        <a href="personal/Hana%20Geremew%20Resume%20v1.4.pdf" class="fa fa-file w3-hover-opacity"></a> 
+    </div>
+</nav>
+
+<!-- Burger menu icon -->
+<div class="w3-hide-large">
+    <span style="font-size:30px;cursor:pointer" onclick="w3_open()">&#9776;</span>
+</div>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+<!-- !PAGE CONTENT! -->
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+    <!-- About Section -->
+    <div class="w3-container" id="about">
+        <h1 class="w3-center">About Me</h1>
+        <p>Hi, I'm Hana Geremew, currently pursuing a degree in Computer Science with a focus on Human-Computer Interaction. Aspiring Front-End/Back-End Developer skilled in Java, Python, HTML, CSS, and JavaScript. Passionate about crafting seamless user experiences and eager to contribute to innovative projects. Seeking internship opportunities to further develop technical expertise and apply skills in AI training and data analysis.</p>
+    </div>
+
+    <!-- Education Section -->
+    <div class="w3-container" id="education">
+        <h1 class="w3-center">Education</h1>
+        <ul>
+            <li><strong>UNIVERSITY of NORTH CAROLINA CHARLOTTE, College of Computing and Informatics, </strong>Charlotte, NC
+                <br>Bachelor of Science in Computer Science, </strong>12/2024
+                <ul>
+                    <li> Concentration on Human-Computer Interaction</li>
+                </ul>
+            </li>
+            <li>NORTHERN VIRGINIA COMMUNITY COLLEGE,</strong> Alexandria, VA
+                <br>Associate of Applied Science, Computer Science & Programming, 08/2022
+                <ul>
+                    <li>Relevant Course:</strong></li>
+                    <ul>
+                        <li>Data Structure & Algorithm</li>
+                        <li>Logic & Algorithm</li>
+                        <li>Human Centered Design</li>
+                        <li>AI & Machin Learning</li>
+                        <li>Data Science & Analytics</li>
+                        <li>Web App Design & Development</li>
+                        <li>Design & Implementation Object-oriented system</li>
+                        <li>Rapid Prototyping</li>
+                    </ul>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Technical Skills Section -->
+    <div class="w3-container" id="technicalSkills">
+        <h1 class="w3-center">Technical Skills</h1>
+        <ul>
+            <li>Programming: C++, Java, Python, HTML, CSS, JS</li>
+            <li>Frameworks & Tools: Ajax, NodeJS, Flask</li>
+            <li>Certification: Google UX Design Professional Certificate</li>
+            <li>Creative Software & Visual arts: IntelliJ, Agile Methodology, Figma, Adobe XD, User Research prototype</li>
+            <li>Other: Microsoft Office Specialist, PowerShell, GitHub, Wireframes, storyboard</li>
+        </ul>
+    </div>
+<!-- Professional Experience Section -->
+<div class="w3-container" id="professional">
+    <h1 class="w3-center">Professional Experience</h1>
+    
+    <div>
+        <h1>Undergraduate IA & Data Related work</h1>
+        <h5>UNC Charlotte College of Computing and Informatics, Charlotte, NC | 01/2024 - Present</h5>
+        <ul>
+            <ul>
+                <li>Providing flexible office hours, to accommodate student needs and provide convenient assistance.</li>
+                <li>Work on campus in addition to TA duties, focusing on data-related tasks and CS department initiatives </li>
+            </ul>
+        </ul>
+    </div>
+    
+    <div>
+        <h1>Undergraduate Teaching Assistant</h1>
+        <h5>UNC Charlotte College of Computing and Informatics, Charlotte, NC | 07/2023 to Present</h5>
+        <ul>
+            <li> for ITSC 1600 (Computing Professionals) & ITSC 1110 (Computer Science Principles)</li>
+            <ul>
+                <li>Work with the Professor and other TAs to help teach and improve their technical writing and research skills.</li>
+                <li>Responded to student emails in a timely manner and graded assignments with constructive feedback.</li>
+            </ul>
+        </ul>
+    </div>
+    <div>
+        <h1>Data Analyze & Marketing Intern</h1>
+        <h5>Ripple Match     Remote | 10/2022 to 12/2023</h5>
+        <ul>
+            <li>Utilize various growth strategies and tools, including social media, email marketing, and presentations, to analyze data and optimize marketing campaigns.</li>
+            <li>Network with peers and faculty members to not only expand the user base but also gather and analyze data for insights into user behavior and preferences</li>
+        </ul>
+    </div>
+    
+    <div>
+        <h1>Rising Innovator – Apprenticeship</h1>
+        <h5>Google Tech Equity Collectivity X MLT Tech Prep Remote | 10/2022 to 10/2023</h5>
+        <ul>
+            <li>Tech Prep is a holistic career coaching program designed by Google, in partnership with Management Leadership for Tomorrow (MLT), to support Black professionals looking to transition into technical roles.</li>
+            <li>Live and on-demand coaching sessions, playbooks, and workshops, Rising Innovators are equipped with the know-how to successfully navigate their career transition.</li>
+        </ul>
+    </div>
+    
+    
+    <div>
+        <h1>IT Support & Graphic Designing Team</h1>
+        <h5>Alexandria Families for Safe Streets (AFSS), Alexandria, VA | 10/2020 to 05/2023</h5>
+        <ul>
+            <li>
+                Coordinated the creation, scheduling, and updating of content and design elements for the company website, ensuring timely and cohesive delivery.</li>
+            <li>
+                Implemented data-driven strategies to optimize website performance, including analyzing user engagement metrics and integrating relevant data to enhance content effectiveness and user experience.</li>
+        </ul>
+    </div>
+    
+</div>
+
+    <!-- Project Section -->
+<div class="w3-container" id="projects">
+    <h1 class="w3-center">Projects</h1>
+    
+    <div>
+        <h1>Pearl Hacks 2023</h1>
+        <h5>University of North Carolina Chapel Hill, Chapel Hill, NC | February 2023</h5>
+        <ul>
+            <li>Participated Developed and demonstrated a web application based on the UNCC database developed using Flask and Figma</li>
+            <li>Pitched to the panel of judges and different scholars.</li>
+        </ul>
+    </div>
+    
+    <div>
+        <h1>Black Wing 2024</h1>
+        <h5>Rewrite the Code (RTC) Virtual | February 2024</h5>
+        <ul>
+            <li>Participant Collaborated with team members to create a user-friendly interface using Figma for UI design & Vercel for deployment</li>
+            <li>Proficiently utilized Node.js for backend development and MySQL for database management</li>
+        </ul>
+    </div>
+    
+</div>
+
+<!-- Leadership Section -->
+<div class="w3-container" id="leadership">
+    <h1 class="w3-center">Leadership</h1>
+    
+    <div>
+        <h1>Charlotte Hack Board Member</h1>
+        <h5>University of North Carolina Charlotte, Charlotte, NC | 05/2023 to Present</h5>
+        <ul>
+            <li>Contributed to the strategic planning and execution of networking, hackathon-related events, budget, and annual roadmaps to increase attendance.</li>
+            <li>Collaborated with a diverse team of tech enthusiasts to develop innovative programming, workshops, and networking to enhance the quality and impact of Charlotte Hack on the UNCC community.</li>
+        </ul>
+    </div>
+    
+</div>
+
+    <!-- Contact Section -->
+    <div class="w3-container" id="contact">
+        <h1 class="w3-center">Contact</h1>
+        <p class="w3-center"><em>Feel free to reach out to me!</em></p>
+        <p class="w3-center"><a href="https://www.linkedin.com/in/hana-geremew-964b15116/" class="fa fa-linkedin w3-hover-opacity"></a>
+       <a href="https://www.github.com/HaNiya21" class="fa fa-github w3-hover-opacity"></a>
+        <a href="mailto:hgeremew@uncc.edu" class="fa fa-envelope w3-hover-opacity"></a></p>
+        <!-- Wrap the button in a div to center it -->
+        <div class="w3-center">
+            <button class="w3-button w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom">
+                <a href="personal/Hana Geremew Resume D1.0.pdf" download>
+                    <i class="fa fa-download w3-margin-right"></i>Download Resume
+                </a>
+            </button>
+        </div>
+    </div>
+
+    <!-- End page content -->
+</div>
+
+<script>
+    // Script to open and close sidebar
+    function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("myOverlay").style.display = "block";
+    }
+
+    function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("myOverlay").style.display = "none";
+    }
+</script>
+
+</body>
+</html>
